@@ -1,0 +1,216 @@
+html {
+    background-image: url("./images/bg_2.jpg");
+    background-size: cover;
+    min-width: 100vw;
+
+    font-family: "Quicksand", sans-serif;
+    font-weight:600;
+}
+
+body {
+    min-height: 860px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: rgba(5, 8, 43, 0.8);
+}
+
+nav {
+    height: 50px;
+
+    padding-left: 80px;
+    
+    display: flex;
+    align-items: center;
+
+    background-color: rgba(11, 7, 26, .5);
+    
+    border-bottom: 2px solid goldenrod;
+}
+
+nav a {
+    margin: 0px 10px;
+
+    font-family: "Oswald", sans-serif;
+    text-decoration: none;
+
+    color: white;
+
+    transition: color 0.5s;
+    
+}
+
+nav a:hover {
+    color:goldenrod;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width: 700px;
+
+    margin: 50px 0px;
+    padding: 20px 40px;
+
+    background-color: rgba(240, 248, 255, 0.8);
+    border-radius: 25px;
+}
+
+.grow-guy {
+    margin-right: 4px;
+    display: inline-block;
+    width: 8px;
+    height: 14px;
+    background-color: goldenrod;
+    transition: width 2s;
+}
+
+h4 .grow-guy {
+    background-color: navy;
+    height: 12px;
+}
+
+.grow-guy:hover {
+    width: 80px;
+}
+
+h2 {
+    font-family: "Oswald", sans-serif;
+
+    text-align: center;
+}
+
+h3 {
+    text-decoration: underline;
+}
+
+h4 {
+    margin-left: 8px;
+}
+
+h4 .group {
+    margin-bottom: 0px;
+}
+
+.group {
+    margin: 0px 8px;
+}
+
+p { 
+    margin-left: 16px;
+    margin-bottom: 32px;
+}
+
+b {
+    font-weight: bolder;
+    text-decoration: underline goldenrod;
+}
+
+a {
+    color:navy;
+}
+
+a:hover {
+    color: goldenrod;
+}
+
+.columns {
+    column-count: 2;
+
+}
+
+hr{
+    margin: 40px;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+}
+
+iframe {
+    border: 6px ridge rgb(5, 8, 43);
+}
+
+.screenshot {
+    display: flex;
+    justify-content: center;
+}
+
+.screenshot img {
+    width: 560px;
+
+    border: 4px ridge goldenrod;
+}
+
+@keyframes jump {
+    0% {top: 0px;}
+    10% {top: -100px;}
+    14% {top: 0px;}
+    25% {top: 0px;}
+    35% {top: -100px;}
+    39% {top: 0px;}
+    45% {top: 0px;}
+    50% {top: -120px;}
+    54% {top: 0px;}
+}
+
+.jims-jump-pad {
+    position: relative;
+    top: 1px;
+}
+
+.jumpin-jim {
+    z-index: 1;
+    float:inline-start;
+    width: 64px;
+    position:relative;
+    left: 64px;
+    animation-name: jump;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+footer {
+    height: 120px;
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+    color: white;
+
+    background: rgba(11, 7, 26, .5);
+
+    border-top: 2px solid goldenrod;
+}
+
+@media screen and (max-width: 758px) {
+    
+    body {
+        height: 100%;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+    }
+
+    .content {
+        width: 360px;
+        height: auto;
+
+        margin: 50px 0px;
+    }
+
+    .screenshot img {
+        width: 360px;
+    }
+    
+    
+}

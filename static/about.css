@@ -1,0 +1,148 @@
+html {
+    background-image: url("./images/bg_2.jpg");
+    background-size: cover;
+    min-width: 100vw;
+
+    font-family: "Quicksand", sans-serif;
+    font-weight:600;
+}
+
+body {
+    min-height: 860px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: rgba(5, 8, 43, 0.8);
+}
+
+nav {
+    height: 50px;
+
+    padding-left: 80px;
+    
+    display: flex;
+    align-items: center;
+
+    background-color: rgba(11, 7, 26, .5);
+    
+    border-bottom: 2px solid goldenrod;
+}
+
+nav a {
+    margin: 0px 10px;
+
+    font-family: "Oswald", sans-serif;
+    text-decoration: none;
+
+    color: white;
+
+    transition: color 0.5s;
+    
+}
+
+nav a:hover {
+    color:goldenrod;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width: 720px;
+
+    margin: 50px 0px;
+    padding: 20px 40px;
+
+    background-color: rgba(240, 248, 255, 0.8);
+    border-radius: 25px;
+}
+
+.content-top {
+    display: flex;
+}
+
+.content img {
+    width: 300px;
+    height:min-content;
+    border-radius: 20px;
+}
+
+.top-text {
+    margin-left: 40px;
+}
+
+h2 {
+    font-family: "Oswald", sans-serif;
+
+    text-align: center;
+}
+
+footer {
+    height: 120px;
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+    color: white;
+
+    background: rgba(11, 7, 26, .5);
+
+    border-top: 2px solid goldenrod;
+}
+
+@media screen and (max-width: 758px) {
+    
+    body {
+        height: 100%;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+    }
+    
+    nav {
+        z-index: 1;
+    }
+
+    .content {
+        width: 360px;
+        height: 1140px;
+
+        margin: 50px 0px;
+    }
+    
+    .content-top {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+
+        position: relative;
+        top: -180px;
+    }
+    
+    .content img {
+
+        width: auto;
+        height:auto;
+
+        clip-path: circle(36% at 50% 66%);
+
+    }
+
+    .top-text {
+        margin-left: 0px;
+    }
+    
+    .content-bottom {
+        margin-top: 0px;
+
+        position: relative;
+        top: -180px;
+    }
+}

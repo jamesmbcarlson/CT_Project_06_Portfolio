@@ -1,0 +1,68 @@
+<!--
+    James Carlson
+    Coding Temple - SE FT-144
+    Frontend - Mini Project: Personal Portfolio Enhancement Project
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="James Carlson" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./static/contact.css" />
+    <title>James Carlson | Portfolio</title>
+</head>
+<body>
+    <nav>
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./resume.html">Résumé</a>
+        <a href="./portfolio.html">Portfolio</a>
+        <a href="./contact.html">Contact</a>
+    </nav>
+    <main>
+        <div class="content">
+            <h2>Contact Me</h2>
+                <div class="contact">
+                <div class="contact-info">
+                    <h2>James Carlson</h2>
+                    <h3><a href="mailto:jamesmbcarlson@gmail.com">jamesmbcarlson@gmail.com</a></h3>
+                    <h3>719-329-8556</h3>
+                    <div class="socials">
+                        <a href="https://www.linkedin.com/in/james-carlson-12098683/"><img src="/static/images/In-Blue-40.png"></a>
+                        <a href="https://github.com/jamesmbcarlson"><img src="/static/images/github-mark.svg"></a>
+                        <a href="https://www.instagram.com/jamesmbcarlson/"><img src="/static/images/Instagram_Glyph_Gradient.png"></a>
+                        <a href="https://www.youtube.com/@jamescarlson"><img src="/static/images/yt_icon_rgb.png"></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h2 style="margin-top: 0px;">Send Me a Message</h2>
+                    <form action="/submitted.html" method="get">
+                        <p role="alert" aria-live="assertive">Please enter a valid email address:</p>
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" name="email" 
+                            pattern="[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}" placeholder="Enter email" required>
+                            <br><br>
+
+                        <label for="message">Message:</label></td>
+                        <br>
+                        <textarea name="message" aria-label="message" required></textarea>
+
+                        <br><br>
+                        <input class="button" type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; 2024 James Carlson</p>
+    </footer>
+</body>
+</html>
