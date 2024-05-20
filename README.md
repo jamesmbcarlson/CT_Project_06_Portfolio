@@ -1,11 +1,14 @@
-Project: Personal Portfolio Enhancement
+*View this project on the web at https://jamescarlson.netlify.app/
+
+## Project: Personal Portfolio Enhancement
 
 Author: James Carlson
 
 This project was built as an assignment for Coding Temple.
 
+---
 
-This HTML project is my portfolio built in HTML and CSS! It includes:
+<br>This HTML project is my portfolio built in HTML and CSS! It includes:
 - A home page with a welcome message.
 - An about me page with some personal details.
 - A resume page made up of my skills, education, and work experience.
